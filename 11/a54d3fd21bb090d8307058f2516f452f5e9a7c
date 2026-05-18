@@ -1,0 +1,34 @@
+src/main/java/io/jenkins/plugins/smart_retry/config/CustomProfileSettings.java
+  s_c62e5af6724a74::t_49f0e0ecd40db7 7,9,20,149-158
+src/test/java/io/jenkins/plugins/smart_retry/config/SmartRetryGlobalConfigurationTest.java
+  s_c62e5af6724a74::t_5ac1b2af90856e 13-14,126-131,151-184,186-193
+  s_c62e5af6724a74::t_46ff876eee7ff9 140-145,148-149,194
+  s_c62e5af6724a74::t_eb03c65430f422 6,146-147
+  s_c62e5af6724a74::t_e9e1fe3cc94100 150
+  s_c62e5af6724a74::t_ea43bf33405aa1 185
+src/main/java/io/jenkins/plugins/smart_retry/config/SmartRetryGlobalConfiguration.java
+  s_c62e5af6724a74::t_49f0e0ecd40db7 21,153,218-229,237-266,268-270,272-274,292-297,299-304,337-349
+  s_c62e5af6724a74::t_e9e1fe3cc94100 285-286
+  s_c62e5af6724a74::t_46ff876eee7ff9 155,275-284,287-291,298
+  s_c62e5af6724a74::t_ea43bf33405aa1 267,271
+docs/task-tracker.md
+  s_c62e5af6724a74::t_ee84a7d6b07cff 192-195
+src/test/java/io/jenkins/plugins/smart_retry/config/CustomProfileSettingsTest.java
+  s_c62e5af6724a74::t_5ac1b2af90856e 6,34-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.8",
+  "base_commit_sha": "11a54d3fd21bb090d8307058f2516f452f5e9a7c",
+  "prompts": {},
+  "sessions": {
+    "s_c62e5af6724a74": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e2afb-c04f-74c1-a4dc-caa7552ed953",
+        "model": "gpt-5.4"
+      },
+      "human_author": null
+    }
+  }
+}
