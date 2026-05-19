@@ -1,0 +1,78 @@
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/gradle-toolchain-provisioning.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-7
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/maven-artifact-partial-download.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-5
+docs/development-plan.md
+  s_3df176bf5c5c65::t_3c632001080f12 7-8
+src/test/java/io/jenkins/plugins/smart_retry/classify/DeterministicFailureClassifierCorpusTest.java
+  s_3df176bf5c5c65::t_90620a0b728d65 66-67,78,80,89-90
+  s_3df176bf5c5c65::t_633a501b03fd00 1-65,68-77,79,81-88,91-112
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/ldap-reauthentication.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-5
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/docker-registry-connection-reset.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-4
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/ambiguous-status-code.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-2,4
+  s_3df176bf5c5c65::t_0e9f3a737879fd 3
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/generic-broken-pipe.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-5
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/gradle-compile-kotlin.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-9
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryResumeTest.java
+  s_3df176bf5c5c65::t_ee6791edceb2aa 57,60
+  s_3df176bf5c5c65::t_f624d2aa877e88 16-17,40
+  s_3df176bf5c5c65::t_a2332e1b5f59f7 1-15,18-39,41-56,58-59,61-69
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepTest.java
+  s_3df176bf5c5c65::t_bcdba5459cee91 33-52,98,109-115,122-125
+  s_3df176bf5c5c65::t_573967972e99a9 116-121
+  s_3df176bf5c5c65::t_198759cb0fdf21 27-29,102-104,106-108,144-146,219-221
+docs/task-tracker.md
+  s_3df176bf5c5c65::t_2e9512e638f95c 40-41,124,126,134-137,196-203
+  s_3df176bf5c5c65::t_3c632001080f12 25,31
+docs/mvp-prd.md
+  s_3df176bf5c5c65::t_3c632001080f12 18-19,37,83,88
+  s_3df176bf5c5c65::t_2e9512e638f95c 129-135,469,530,640,653
+docs/implementation-plan.md
+  s_3df176bf5c5c65::t_3c632001080f12 7-8
+  s_3df176bf5c5c65::t_2e9512e638f95c 146-150,407-409,555
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/git-clone-sideband-interruption.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-10
+src/main/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepExecution.java
+  s_3df176bf5c5c65::t_2062356eccc3a3 116,148,156,311-313,315-328,332-345,347-371,375-377
+  s_3df176bf5c5c65::t_d2ddd25d0f8119 314,329-331,346,372-374
+  s_3df176bf5c5c65::t_87579cff72e41d 62,167-168,185-186,189-190,194-195,198-199,290-310
+README.md
+  s_3df176bf5c5c65::t_dd1a1f582942cd 199,230,234,243
+  s_3df176bf5c5c65::t_73b788543f8374 80,114
+  s_3df176bf5c5c65::t_41fe998abb4f65 7,10-13,17
+  s_3df176bf5c5c65::t_6a45601f32826d 45-55,73-79,83-86,88-101,180-195
+  s_3df176bf5c5c65::t_1b2a6b58df4e68 201-228
+  s_3df176bf5c5c65::t_9bb79c9fd3bd56 102-113,117-132,134-136,196-198,200,229,231-233,235-242,244-245
+  s_3df176bf5c5c65::t_79f8c038e6b1cd 81-82,115-116
+  s_3df176bf5c5c65::t_6c144e4b8a61c7 14-16,18,20,22-28,30,38,40-44,56-72,87,138,140,142,144-149,151-179,246-252
+  s_3df176bf5c5c65::t_ef4a47ec040018 3,5
+src/main/resources/io/jenkins/plugins/smart_retry/action/SmartRetryRunAction/index.jelly
+  s_3df176bf5c5c65::t_d9eb3fad58590d 52-71
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/kubernetes-agent-evicted.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-10
+src/main/java/io/jenkins/plugins/smart_retry/action/SmartRetryRunAction.java
+  s_3df176bf5c5c65::t_feb8d3388ad1c2 134-136,145-147,155-174,176-179,218-229
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/pytest-failure-summary.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.9",
+  "base_commit_sha": "f3c7da1492d33117978738c278444639617d3e2b",
+  "prompts": {},
+  "sessions": {
+    "s_3df176bf5c5c65": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e3f36-58b7-7920-b030-53cf6fd4649a",
+        "model": "gpt-5.4"
+      },
+      "human_author": null
+    }
+  }
+}
