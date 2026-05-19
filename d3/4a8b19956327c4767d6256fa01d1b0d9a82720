@@ -1,0 +1,71 @@
+docs/mvp-prd.md
+  s_3df176bf5c5c65::t_2e9512e638f95c 128-134,468,529,639,652
+src/main/java/io/jenkins/plugins/smart_retry/action/SmartRetryRunAction.java
+  s_3df176bf5c5c65::t_feb8d3388ad1c2 134-136,145-147,155-174,176-179,218-229
+src/test/java/io/jenkins/plugins/smart_retry/classify/DeterministicFailureClassifierCorpusTest.java
+  s_3df176bf5c5c65::t_633a501b03fd00 1-65,68-77,79,81-88,91-112
+  s_3df176bf5c5c65::t_90620a0b728d65 66-67,78,80,89-90
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/generic-broken-pipe.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-5
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/git-clone-sideband-interruption.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-10
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/maven-artifact-partial-download.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-5
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/gradle-toolchain-provisioning.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-7
+README.md
+  s_3df176bf5c5c65::t_dd1a1f582942cd 200,231,235,244
+  s_3df176bf5c5c65::t_9bb79c9fd3bd56 103-114,118-133,135-137,197-199,201,230,232-234,236-243,245-246
+  s_3df176bf5c5c65::t_1b2a6b58df4e68 202-229
+  s_3df176bf5c5c65::t_6c144e4b8a61c7 3,5,7,10,14-21,23-29,31,39,41-45,57-73,88,139,141,143,145-150,152-180,247-253
+  s_3df176bf5c5c65::t_79f8c038e6b1cd 82-83,116-117
+  s_3df176bf5c5c65::t_73b788543f8374 81,115
+  s_3df176bf5c5c65::t_6a45601f32826d 46-56,74-80,84-87,89-102,181-196
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/ambiguous-status-code.log
+  s_3df176bf5c5c65::t_0e9f3a737879fd 3
+  s_3df176bf5c5c65::t_633a501b03fd00 1-2,4
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/kubernetes-agent-evicted.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-10
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/ldap-reauthentication.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-5
+docs/implementation-plan.md
+  s_3df176bf5c5c65::t_2e9512e638f95c 144-148,405-407,553
+src/main/resources/io/jenkins/plugins/smart_retry/action/SmartRetryRunAction/index.jelly
+  s_3df176bf5c5c65::t_d9eb3fad58590d 52-71
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepTest.java
+  s_3df176bf5c5c65::t_bcdba5459cee91 33-52,98,109-115,122-125
+  s_3df176bf5c5c65::t_573967972e99a9 116-121
+  s_3df176bf5c5c65::t_198759cb0fdf21 27-29,102-104,106-108,144-146,219-221
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryResumeTest.java
+  s_3df176bf5c5c65::t_f624d2aa877e88 16-17,40
+  s_3df176bf5c5c65::t_a2332e1b5f59f7 1-15,18-39,41-56,58-59,61-69
+  s_3df176bf5c5c65::t_ee6791edceb2aa 57,60
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/docker-registry-connection-reset.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-4
+src/main/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepExecution.java
+  s_3df176bf5c5c65::t_87579cff72e41d 62,167-168,185-186,189-190,194-195,198-199,290-310
+  s_3df176bf5c5c65::t_2062356eccc3a3 116,148,156,311-313,315-328,332-345,347-371,375-377
+  s_3df176bf5c5c65::t_d2ddd25d0f8119 314,329-331,346,372-374
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/gradle-compile-kotlin.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-9
+docs/task-tracker.md
+  s_3df176bf5c5c65::t_2e9512e638f95c 25,39-40,123,125,133-136,195-202
+src/test/resources/io/jenkins/plugins/smart_retry/classify/samples/pytest-failure-summary.log
+  s_3df176bf5c5c65::t_633a501b03fd00 1-11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.9",
+  "base_commit_sha": "d34a8b19956327c4767d6256fa01d1b0d9a82720",
+  "prompts": {},
+  "sessions": {
+    "s_3df176bf5c5c65": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e3f36-58b7-7920-b030-53cf6fd4649a",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
