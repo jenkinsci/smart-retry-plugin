@@ -1,0 +1,20 @@
+README.md
+  s_3df176bf5c5c65::t_6a45601f32826d 40-44,97
+  s_3df176bf5c5c65::t_6c144e4b8a61c7 50-54,193
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.10",
+  "base_commit_sha": "25c91030c5d0245125fe2d078178d41fd2330047",
+  "prompts": {},
+  "sessions": {
+    "s_3df176bf5c5c65": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e3f36-58b7-7920-b030-53cf6fd4649a",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
