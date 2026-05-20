@@ -1,0 +1,34 @@
+src/main/java/io/jenkins/plugins/smart_retry/docs/SmartRetryDocsRootAction.java
+  s_8b1503506d362f::t_1e86582863ec26 5,26-27,30-31
+src/test/java/io/jenkins/plugins/smart_retry/config/SmartRetryGlobalConfigurationTest.java
+  s_8b1503506d362f::t_c890752f0eb83e 4,145-147
+  s_8b1503506d362f::t_310f676c3c2c51 19,143-144
+src/test/java/io/jenkins/plugins/smart_retry/config/CustomProfileSettingsTest.java
+  s_8b1503506d362f::t_a964ce67c1582f 4,44-46
+  s_8b1503506d362f::t_7c946695018eaf 47-49
+src/test/java/io/jenkins/plugins/smart_retry/docs/SmartRetryDocsRootActionTest.java
+  s_8b1503506d362f::t_89182f1e5c7ba0 13-14
+  s_8b1503506d362f::t_59983eca99bc0f 9-10,12,15-16
+  s_8b1503506d362f::t_2042c8f93f9e24 1-8,11,17-18
+src/main/java/io/jenkins/plugins/smart_retry/config/SmartRetryGlobalConfiguration.java
+  s_8b1503506d362f::t_2a18c9c39d840b 26,153
+src/main/java/io/jenkins/plugins/smart_retry/model/SmartRetryReferenceCatalog.java
+  s_8b1503506d362f::t_e0c0e84e36c9c0 1-386,389-445
+  s_8b1503506d362f::t_9a51b3797040b5 387-388
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.10",
+  "base_commit_sha": "7c85b1ffc464fb3870caff0828da442f2cbd50eb",
+  "prompts": {},
+  "sessions": {
+    "s_8b1503506d362f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e44ba-8f2d-79e2-9c33-b2bd92f2ab5d",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
