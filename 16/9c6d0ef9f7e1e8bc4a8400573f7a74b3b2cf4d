@@ -1,0 +1,46 @@
+src/main/java/io/jenkins/plugins/smart_retry/step/SmartRetryStep.java
+  s_3df176bf5c5c65::t_2d929c45ba9000 43,61,172-178
+  s_3df176bf5c5c65::t_58c063235fd983 7-11,20,98-170
+src/main/resources/io/jenkins/plugins/smart_retry/step/SmartRetryStep/help-maxRetries.html
+  s_3df176bf5c5c65::t_e48b0627c1c174 1-4
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepTest.java
+  s_3df176bf5c5c65::t_da571553043101 131-132
+  s_3df176bf5c5c65::t_9bff156da24f1b 8,10-12,127-130,133-141
+  s_3df176bf5c5c65::t_dcd735d0db7c8c 118
+  s_3df176bf5c5c65::t_f27be4d70e9ff4 3-4,87-88
+  s_3df176bf5c5c65::t_d708e047816532 123,125-126
+  s_3df176bf5c5c65::t_2c7990488ea4d3 115-117,119-122,124
+  s_3df176bf5c5c65::t_a92542587b4c8a 14-15
+  s_3df176bf5c5c65::t_9d0344f64dac1c 77-86,89-114
+src/main/resources/io/jenkins/plugins/smart_retry/step/SmartRetryStep/help-initialDelaySeconds.html
+  s_3df176bf5c5c65::t_e48b0627c1c174 1-4
+docs/task-tracker.md
+  s_3df176bf5c5c65::t_e38cbe6cc6694d 25,129,135,209
+  s_3df176bf5c5c65::t_1b991975ad390f 125,204-206
+  s_3df176bf5c5c65::t_2ede8de345e3a9 207-208
+  s_3df176bf5c5c65::t_b4561e191f8b2c 136-137
+src/main/resources/io/jenkins/plugins/smart_retry/step/SmartRetryStep/help-profile.html
+  s_3df176bf5c5c65::t_e48b0627c1c174 1-5
+README.md
+  s_3df176bf5c5c65::t_6a28ac1a84ea0a 45-46
+src/main/resources/io/jenkins/plugins/smart_retry/step/SmartRetryStep/config.jelly
+  s_3df176bf5c5c65::t_e48b0627c1c174 1-18
+src/main/resources/io/jenkins/plugins/smart_retry/step/SmartRetryStep/help-backoff.html
+  s_3df176bf5c5c65::t_e48b0627c1c174 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.10",
+  "base_commit_sha": "169c6d0ef9f7e1e8bc4a8400573f7a74b3b2cf4d",
+  "prompts": {},
+  "sessions": {
+    "s_3df176bf5c5c65": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e3f36-58b7-7920-b030-53cf6fd4649a",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
