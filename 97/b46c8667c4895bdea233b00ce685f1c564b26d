@@ -1,0 +1,21 @@
+AGENTS.md
+  s_8b1503506d362f::t_e785156634446d 18,37,40,42,45-46,68
+  s_8b1503506d362f::t_c04af4e9f913fc 26,28,38,74
+  s_8b1503506d362f::t_7dd210fe51bfb9 39,44,53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.10",
+  "base_commit_sha": "97b46c8667c4895bdea233b00ce685f1c564b26d",
+  "prompts": {},
+  "sessions": {
+    "s_8b1503506d362f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e44ba-8f2d-79e2-9c33-b2bd92f2ab5d",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
