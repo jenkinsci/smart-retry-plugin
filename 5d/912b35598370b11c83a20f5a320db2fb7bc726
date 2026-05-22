@@ -1,0 +1,78 @@
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepTest.java
+  s_e33c7ee5ae06e5::t_27c7cbc4e8c70c 75
+  s_e33c7ee5ae06e5::t_80090704e9d7a9 8,28-32,42-43,57,74,88,100-102,107-108,111,159,169,186-187,191-192,217,230-231,244,297,309-310,319-320,335,337,350,364,401,426-427,453-454
+src/main/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepExecution.java
+  s_e33c7ee5ae06e5::t_d05d26e86a3fb8 286-287
+  s_e33c7ee5ae06e5::t_3034f3a7182a1b 380
+  s_e33c7ee5ae06e5::t_664abcc206c2cc 210
+  s_e33c7ee5ae06e5::t_9f7863591aca5a 51,71-74,81,92,161,232,275-285,288-289,291,308,371,384-404
+  s_e33c7ee5ae06e5::t_b6e1fbe50a1d5e 38-39,139,144,323,344,357,359
+src/main/java/io/jenkins/plugins/smart_retry/action/SmartRetryRunAction.java
+  s_e33c7ee5ae06e5::t_b6e1fbe50a1d5e 70-71
+  s_e33c7ee5ae06e5::t_9f7863591aca5a 22-26,117,120,136,142-143,147,153-154,158,166,174,180,184,196,203,207,216,226,256-257,324,327,333,346
+  s_e33c7ee5ae06e5::t_188d2fdb3fe38b 7,127
+src/test/java/io/jenkins/plugins/smart_retry/model/SmartRetryReferenceCatalogTest.java
+  s_e33c7ee5ae06e5::t_700a754f0c5a0b 1-38
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryResumeTest.java
+  s_e33c7ee5ae06e5::t_7a3493eed38feb 8,18-19,32-34
+docs/implementation-plan.md
+  s_e33c7ee5ae06e5::t_a305ff6bb2b8f0 301-304
+src/main/java/io/jenkins/plugins/smart_retry/config/CustomProfileSettings.java
+  s_e33c7ee5ae06e5::t_9f7863591aca5a 39-41
+src/main/java/io/jenkins/plugins/smart_retry/classify/DeterministicFailureClassifier.java
+  s_e33c7ee5ae06e5::t_b6e1fbe50a1d5e 354-359,365-367,369-389,391
+src/main/java/io/jenkins/plugins/smart_retry/model/SmartRetryReferenceCatalog.java
+  s_e33c7ee5ae06e5::t_700a754f0c5a0b 19,91,98,105,112,119,126,133,140,147,154,161,168,175,182,189,196,203,210
+  s_e33c7ee5ae06e5::t_ee60446e7dc771 585
+  s_e33c7ee5ae06e5::t_3379391f8f1082 584,589-590
+  s_e33c7ee5ae06e5::t_b6e1fbe50a1d5e 16-18,20-24,89,96,103,110,117,124,131,138,145,152,159,166,173,180,187,194,201,208,215,217,222,224,231,236,238,243,245,250,252,257,259,264,266,271,273,278,280,285,287,292,294,299,301,306,308,313,315,320,322,327,329,334,336,341,343,348,355,357,362,364,369,371,376,378,458,463,469,474,482-484,487-489,500-502,594,675,683
+  s_e33c7ee5ae06e5::t_2ab7f17c97e521 350
+src/test/java/io/jenkins/plugins/smart_retry/config/CustomProfileSettingsTest.java
+  s_e33c7ee5ae06e5::t_05a1fa807b8030 9,42
+src/main/java/io/jenkins/plugins/smart_retry/config/SmartRetryGlobalConfiguration.java
+  s_e33c7ee5ae06e5::t_b6e1fbe50a1d5e 31-35,57,84,167-168,180-181,186,248,251,283-304,306-317,370,377,410-411
+  s_e33c7ee5ae06e5::t_d36a5a8ff6c1ba 305
+  s_e33c7ee5ae06e5::t_63c1c4c4a5e412 38,412
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepExecutionTest.java
+  s_e33c7ee5ae06e5::t_9f7863591aca5a 1-26
+src/main/java/io/jenkins/plugins/smart_retry/model/AttemptRecord.java
+  s_e33c7ee5ae06e5::t_b6e1fbe50a1d5e 15-17,100,105,107,119
+docs/mvp-prd.md
+  s_e33c7ee5ae06e5::t_d49fd80db21b57 109,378,402,498
+docs/task-tracker.md
+  s_e33c7ee5ae06e5::t_4584ddffc6ca07 191-195
+README.md
+  s_e33c7ee5ae06e5::t_b788887306bd47 112
+  s_e33c7ee5ae06e5::t_5923a57e6cb1f9 146,178
+src/test/java/io/jenkins/plugins/smart_retry/policy/DeterministicRetryPolicyTest.java
+  s_e33c7ee5ae06e5::t_670d839df8cdc0 33-37,110
+  s_e33c7ee5ae06e5::t_6d8c1a2a5d54c6 100
+  s_e33c7ee5ae06e5::t_0bf01a1a451de0 19-20,49-50,105-106
+src/test/java/io/jenkins/plugins/smart_retry/config/SmartRetryGlobalConfigurationTest.java
+  s_e33c7ee5ae06e5::t_50721fd8c50f85 12,38,44,55,64,67,75-76,109-110,113-114,126,174,195-197
+src/main/java/io/jenkins/plugins/smart_retry/step/SmartRetryStep.java
+  s_e33c7ee5ae06e5::t_ee60446e7dc771 104,132
+  s_e33c7ee5ae06e5::t_d1067c84594812 11,108-109,124-125,137-138
+  s_e33c7ee5ae06e5::t_9f7863591aca5a 31-33
+docs/development-plan.md
+  s_e33c7ee5ae06e5::t_79ab67f8e6f736 95
+src/main/java/io/jenkins/plugins/smart_retry/policy/BuiltInProfiles.java
+  s_e33c7ee5ae06e5::t_8e1534bd5c45d9 12
+  s_e33c7ee5ae06e5::t_b6e1fbe50a1d5e 13-16,43,46,54,59,68,82,85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "5d912b35598370b11c83a20f5a320db2fb7bc726",
+  "prompts": {},
+  "sessions": {
+    "s_e33c7ee5ae06e5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e4a52-edf5-7a81-8ec9-f96c4634f0e1",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
