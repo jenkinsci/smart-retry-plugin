@@ -1,0 +1,58 @@
+src/test/java/io/jenkins/plugins/smart_retry/model/SmartRetryReferenceCatalogTest.java
+  s_b367989b34ba35::t_64d9b8490f0892 38-48
+docs/development-plan.md
+  s_b367989b34ba35::t_505e53014346f5 84
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepTest.java
+  s_b367989b34ba35::t_05d4daaa8f9307 430
+  s_b367989b34ba35::t_44246bad6c9a31 469-470
+  s_b367989b34ba35::t_0d2710a2dcf7d3 474-493,496-497
+  s_b367989b34ba35::t_a7e97b227ca1e6 494-495
+  s_b367989b34ba35::t_d05c08a79b3e41 422-429,431-447
+  s_b367989b34ba35::t_3e4f67d785b24a 448-468,471-473
+src/main/java/io/jenkins/plugins/smart_retry/policy/DeterministicRetryPolicy.java
+  s_b367989b34ba35::t_08f9485f87628c 13
+docs/implementation-plan.md
+  s_b367989b34ba35::t_3686920d0bc2c6 62
+  s_b367989b34ba35::t_1c0e2c7fa2da31 63
+src/test/java/io/jenkins/plugins/smart_retry/classify/DeterministicFailureClassifierTest.java
+  s_b367989b34ba35::t_25ac9d2fbaba70 506-511,513-518
+  s_b367989b34ba35::t_8c925544e61dc3 519-529
+  s_b367989b34ba35::t_2e6e9ff7b979cd 512
+  s_b367989b34ba35::t_5eee95357edbb5 530-538
+src/main/java/io/jenkins/plugins/smart_retry/classify/DeterministicFailureClassifier.java
+  s_b367989b34ba35::t_83ef6fc8b96a42 220-226
+  s_b367989b34ba35::t_c4a42d287fafd4 211-217
+  s_b367989b34ba35::t_0af8a4980f499f 218-219,227-231
+src/main/java/io/jenkins/plugins/smart_retry/config/CustomProfileSettings.java
+  s_b367989b34ba35::t_bc740bc2c880f6 170
+  s_b367989b34ba35::t_a7e97b227ca1e6 171
+src/main/java/io/jenkins/plugins/smart_retry/model/SmartRetryReferenceCatalog.java
+  s_b367989b34ba35::t_7e2e8c3f8abc8d 56-57,266-272
+  s_b367989b34ba35::t_5ee0f0c3378a3a 55,58,273-279
+docs/task-tracker.md
+  s_b367989b34ba35::t_a4a1125248d6f4 197-199
+  s_b367989b34ba35::t_b05c7cc5b34995 36,200-201
+src/test/java/io/jenkins/plugins/smart_retry/policy/DeterministicRetryPolicyTest.java
+  s_b367989b34ba35::t_ec4d8dcaf43271 90-105
+src/main/java/io/jenkins/plugins/smart_retry/model/FailureType.java
+  s_b367989b34ba35::t_7ddf6cb2615cab 9
+docs/mvp-prd.md
+  s_b367989b34ba35::t_7ac9f22f333769 143,185-188,190-192,197-203
+  s_b367989b34ba35::t_1c593c50b4f000 189,193-196
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "09f2e203483170d8fa617003d8b8f81768d64bdd",
+  "prompts": {},
+  "sessions": {
+    "s_b367989b34ba35": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e5e2d-0b24-7c00-a2ed-c974c9c7265d",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
