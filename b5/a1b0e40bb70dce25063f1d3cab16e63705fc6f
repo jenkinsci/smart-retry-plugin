@@ -1,0 +1,28 @@
+docs/implementation-plan.md
+  s_af3fdc37b05a19::t_4a736c623f0314 214,419,499
+docs/development-plan.md
+  s_af3fdc37b05a19::t_14c2d1b0b77a83 280
+README.md
+  s_af3fdc37b05a19::t_294f9ccdfaa14d 51
+docs/mvp-prd.md
+  s_af3fdc37b05a19::t_557811ad22a48c 446,546
+  s_af3fdc37b05a19::t_4a736c623f0314 646,650,673
+docs/task-tracker.md
+  s_af3fdc37b05a19::t_4a736c623f0314 34-35,92,117,191
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "b5a1b0e40bb70dce25063f1d3cab16e63705fc6f",
+  "prompts": {},
+  "sessions": {
+    "s_af3fdc37b05a19": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019e72e7-16d6-7b50-bbc9-866659cece36",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
