@@ -1,0 +1,62 @@
+src/test/java/io/jenkins/plugins/smart_retry/config/CustomProfileSettingsTest.java
+  s_1378fc40256414::t_927f75139c1ae3 11,69-71,74-81
+  s_1378fc40256414::t_69e7c581f987bb 72-73
+  s_1378fc40256414::t_360d0789df535f 67-68
+src/main/webapp/css/run-action.css
+  s_1378fc40256414::t_351608811b014c 1-7
+src/main/resources/io/jenkins/plugins/smart_retry/action/SmartRetryRunAction/index.jelly
+  s_1378fc40256414::t_4a4f7fb5d6375a 126
+  s_1378fc40256414::t_9f6168eaa988de 133
+  s_1378fc40256414::t_351608811b014c 4-6,19,23
+  s_1378fc40256414::t_971cd549a05b1b 31,110
+src/main/java/io/jenkins/plugins/smart_retry/action/SmartRetryRunAction.java
+  s_1378fc40256414::t_4a4f7fb5d6375a 327,346
+  s_1378fc40256414::t_6fd145954fb2eb 48
+  s_1378fc40256414::t_9f6168eaa988de 26,337,356
+src/main/webapp/css/docs.css
+  s_1378fc40256414::t_eccf835b511042 3-5
+  s_1378fc40256414::t_e61df8599a8402 77-78
+src/test/java/io/jenkins/plugins/smart_retry/step/SmartRetryStepTest.java
+  s_1378fc40256414::t_4a4f7fb5d6375a 266
+  s_1378fc40256414::t_6fd145954fb2eb 253
+src/main/resources/io/jenkins/plugins/smart_retry/docs/SmartRetryDocsRootAction/index.jelly
+  s_1378fc40256414::t_e61df8599a8402 96-110
+  s_1378fc40256414::t_eccf835b511042 6,18-19,43,45-46,83,89,91-92,150,152-153,179
+  s_1378fc40256414::t_971cd549a05b1b 22,63,112,156
+pom.xml
+  s_1378fc40256414::t_6fd145954fb2eb 62-64
+src/main/webapp/js/docs.js
+  s_1378fc40256414::t_4b18abe6270c0f 199
+  s_1378fc40256414::t_9f6168eaa988de 5,7,44-50,53,56,61-76,78,80-81,109,113-114,148
+  s_1378fc40256414::t_6e19c72877de45 6,58,60,139-141
+  s_1378fc40256414::t_eccf835b511042 15-22,29-42,51,57,59,79,82-101,110
+  s_1378fc40256414::t_79fa92421639bb 103-108
+  s_1378fc40256414::t_ccf8f83af3d548 157,159-160,167-178,185,187-188,191
+  s_1378fc40256414::t_720eab26887e48 23-28,115-130,132-138,142-147,240,243
+  s_1378fc40256414::t_0d0198cb6672f5 8-10,12-13,54,182,203-206
+  s_1378fc40256414::t_4a4f7fb5d6375a 181,183-184,186,189-190,201-202
+src/main/java/io/jenkins/plugins/smart_retry/model/AttemptRecord.java
+  s_1378fc40256414::t_4a4f7fb5d6375a 91-94
+src/main/resources/io/jenkins/plugins/smart_retry/config/CustomProfileSettings/config.jelly
+  s_1378fc40256414::t_360d0789df535f 3,11,13-22
+src/main/webapp/css/config.css
+  s_1378fc40256414::t_360d0789df535f 34-47
+src/test/java/io/jenkins/plugins/smart_retry/docs/SmartRetryDocsRootActionTest.java
+  s_1378fc40256414::t_eccf835b511042 31-36,38,42,46,49,54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.7",
+  "base_commit_sha": "1e30ab44bec4ef48079ca837c3ff7e1fc871b7b4",
+  "prompts": {},
+  "sessions": {
+    "s_1378fc40256414": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ece2c-a5d2-7970-be96-b7ff59cb267c",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
