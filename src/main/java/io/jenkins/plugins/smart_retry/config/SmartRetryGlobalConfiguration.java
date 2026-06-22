@@ -149,9 +149,13 @@ public final class SmartRetryGlobalConfiguration extends GlobalConfiguration {
     public String getDisabledBuiltInRules() {
         return disabledBuiltInRules;
     }
+
     public String getSupportedDisabledBuiltInRulesList() {
-        return String.join(", ", io.jenkins.plugins.smart_retry.model.SmartRetryReferenceCatalog.getSupportedDisabledBuiltInRuleIds());
+        return String.join(
+                ", ",
+                io.jenkins.plugins.smart_retry.model.SmartRetryReferenceCatalog.getSupportedDisabledBuiltInRuleIds());
     }
+
     public Set<String> getDisabledBuiltInRuleIds() {
         return parseDisabledBuiltInRuleIds(disabledBuiltInRules);
     }
