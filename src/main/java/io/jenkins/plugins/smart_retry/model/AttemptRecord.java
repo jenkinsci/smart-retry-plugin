@@ -37,7 +37,7 @@ public final class AttemptRecord implements Serializable {
         this.retried = retried;
         this.delayMillis = delayMillis;
         this.outcome = Objects.requireNonNull(outcome, "outcome must not be null");
-        this.summary = Objects.requireNonNull(summary, "Summary must not be null");
+        this.summary = summary;
     }
 
     public int getAttemptNumber() {
@@ -129,7 +129,10 @@ public final class AttemptRecord implements Serializable {
     }
 
     public String getSummaryDisplay() {
-        return formatDisplayValue(summary);
+        if (summary == null || summary.isBlank()) {
+            return "n/a";
+        }
+        return summary;
     }
 
     @CheckForNull
