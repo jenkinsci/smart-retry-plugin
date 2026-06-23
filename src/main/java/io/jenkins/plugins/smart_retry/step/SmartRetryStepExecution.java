@@ -292,8 +292,8 @@ public class SmartRetryStepExecution extends StepExecution {
                 if (existing != null) {
                     existing.cancel(false);
                 }
-                waitingTask = Timer.get().schedule(this::resumeScheduledAttempt, remainingMillis,
-                        TimeUnit.MILLISECONDS);
+                waitingTask =
+                        Timer.get().schedule(this::resumeScheduledAttempt, remainingMillis, TimeUnit.MILLISECONDS);
                 return;
             }
         }
