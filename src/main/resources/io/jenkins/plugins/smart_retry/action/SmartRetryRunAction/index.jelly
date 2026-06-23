@@ -107,49 +107,56 @@
             <l:card title="Attempt Log">
                 <j:choose>
                     <j:when test="${it.attemptsCount > 0}">
-                        <table class="jenkins-table sortable">
-                            <thead>
-                                <tr>
-                                    <th align="left">Attempt</th>
-                                    <th align="left">Failure type</th>
-                                    <th align="left">Matched rule</th>
-                                    <th align="left">Decision</th>
-                                    <th align="left">Delay</th>
-                                    <th align="left">Outcome</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <j:forEach var="a" items="${it.attempts}">
+                        <div class="sr-attempt-log-wrapper">
+                            <table class="jenkins-table sortable">
+                                <thead>
                                     <tr>
-                                        <td>${a.attemptNumber}</td>
-                                        <td>
-                                            <a href="${rootURL}/smartRetryDocs/#${a.failureTypeDetailsDocumentationAnchor}">
-                                                ${a.failureType}
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <j:choose>
-                                                <j:when test="${a.matchedRuleDocumentationAnchor}">
-                                                    <a href="${rootURL}/smartRetryDocs/#${a.matchedRuleDocumentationAnchor}">
-                                                        ${a.matchedRuleDisplay}
-                                                    </a>
-                                                </j:when>
-                                                <j:otherwise>
-                                                    ${a.matchedRuleDisplay}
-                                                </j:otherwise>
-                                            </j:choose>
-                                        </td>
-                                        <td>
-                                            <l:badge badge="${a.retryDecisionBadge}" />
-                                        </td>
-                                        <td>${a.delayDisplay}</td>
-                                        <td>
-                                            <l:badge badge="${a.outcomeBadge}" />
-                                        </td>
+                                        <th align="left">Attempt</th>
+                                        <th align="left">Failure type</th>
+                                        <th align="left">Summary</th>
+                                        <th align="left">Matched rule</th>
+                                        <th align="left">Decision</th>
+                                        <th align="left">Delay</th>
+                                        <th align="left">Outcome</th>
                                     </tr>
-                                </j:forEach>
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    <j:forEach var="a" items="${it.attempts}">
+                                        <tr>
+                                            <td>${a.attemptNumber}</td>
+                                            <td>
+                                                <a href="${rootURL}/smartRetryDocs/#${a.failureTypeDetailsDocumentationAnchor}">
+                                                    ${a.failureType}
+                                                </a>
+                                            </td>
+
+                                            <td>
+                                                ${a.summaryDisplay}
+                                            </td>
+                                            <td>
+                                                <j:choose>
+                                                    <j:when test="${a.matchedRuleDocumentationAnchor}">
+                                                        <a href="${rootURL}/smartRetryDocs/#${a.matchedRuleDocumentationAnchor}">
+                                                            ${a.matchedRuleDisplay}
+                                                        </a>
+                                                    </j:when>
+                                                    <j:otherwise>
+                                                        ${a.matchedRuleDisplay}
+                                                    </j:otherwise>
+                                                </j:choose>
+                                            </td>
+                                            <td>
+                                                <l:badge badge="${a.retryDecisionBadge}" />
+                                            </td>
+                                            <td>${a.delayDisplay}</td>
+                                            <td>
+                                                <l:badge badge="${a.outcomeBadge}" />
+                                            </td>
+                                        </tr>
+                                    </j:forEach>
+                                </tbody>
+                            </table>
+                        </div>
                     </j:when>
                     <j:otherwise>
                         <p>No Smart Retry attempts were recorded for this build.</p>

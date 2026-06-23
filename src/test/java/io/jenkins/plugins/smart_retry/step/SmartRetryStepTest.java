@@ -208,6 +208,14 @@ class SmartRetryStepTest {
         Assertions.assertTrue(page.asNormalizedText().contains("Last retry-triggering rule"));
         Assertions.assertFalse(page.asNormalizedText().contains("Terminal failure type"));
         Assertions.assertFalse(page.asNormalizedText().contains("ended with retry scheduled"));
+        Assertions.assertNotNull(
+                action.getAttempts().get(0).getSummaryDisplay());
+
+        Assertions.assertFalse(
+                action.getAttempts().get(0).getSummaryDisplay().isBlank());
+        Assertions.assertEquals(
+                "Scm Remote Hung Up Unexpectedly",
+                action.getAttempts().get(0).getSummaryDisplay());
     }
 
     @Test
@@ -235,6 +243,14 @@ class SmartRetryStepTest {
         Assertions.assertNotNull(action);
         Assertions.assertEquals("FAILED", action.getFinalOutcome());
         Assertions.assertEquals(2, action.getAttempts().size());
+        Assertions.assertNotNull(
+                action.getAttempts().get(0).getSummaryDisplay());
+
+        Assertions.assertFalse(
+                action.getAttempts().get(0).getSummaryDisplay().isBlank());
+        Assertions.assertEquals(
+                "Scm Remote Hung Up Unexpectedly",
+                action.getAttempts().get(0).getSummaryDisplay());
     }
 
     @Test
@@ -263,6 +279,10 @@ class SmartRetryStepTest {
         Assertions.assertTrue(page.asNormalizedText().contains("Failed"));
         Assertions.assertTrue(page.asNormalizedText().contains("Retry scheduled"));
         Assertions.assertTrue(page.asNormalizedText().contains("SCM_TRANSIENT"));
+        Assertions.assertTrue(page.asNormalizedText().contains("Summary"));
+        Assertions.assertEquals(
+                "Scm Remote Hung Up Unexpectedly",
+                action.getAttempts().get(0).getSummaryDisplay());
         Assertions.assertTrue(page.asXml().contains("smartRetryDocs/#detail-failure-type-scm-transient"));
         Assertions.assertTrue(page.asXml().contains("failure-type-scm-transient"));
         Assertions.assertTrue(page.asXml().contains("scm-remote-end-hung-up"));
