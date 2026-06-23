@@ -21,6 +21,7 @@ public final class AttemptRecord implements Serializable {
     private final boolean retried;
     private final long delayMillis;
     private final String outcome;
+    private final String summary;
 
     public AttemptRecord(
             int attemptNumber,
@@ -28,13 +29,15 @@ public final class AttemptRecord implements Serializable {
             @CheckForNull String matchedRule,
             boolean retried,
             long delayMillis,
-            String outcome) {
+            String outcome,
+            String summary) {
         this.attemptNumber = attemptNumber;
         this.failureType = Objects.requireNonNull(failureType, "failureType must not be null");
         this.matchedRule = normalizeMatchedRule(matchedRule);
         this.retried = retried;
         this.delayMillis = delayMillis;
         this.outcome = Objects.requireNonNull(outcome, "outcome must not be null");
+        this.summary = summary;
     }
 
     public int getAttemptNumber() {
@@ -123,6 +126,13 @@ public final class AttemptRecord implements Serializable {
             return new Badge(RETRY_SCHEDULED, "This attempt triggered another retry.", Badge.Severity.INFO);
         }
         return new Badge(getOutcomeDisplay(), "Smart Retry recorded this outcome.", Badge.Severity.INFO);
+    }
+
+    public String getSummaryDisplay() {
+        if (summary == null || summary.isBlank()) {
+            return "n/a";
+        }
+        return summary;
     }
 
     @CheckForNull

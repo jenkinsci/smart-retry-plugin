@@ -185,7 +185,8 @@ public class SmartRetryStepExecution extends StepExecution {
                 classification.getMatchedRule(),
                 retried,
                 decision.getDelayMillis(),
-                outcome));
+                outcome,
+                classification.getSummary()));
     }
 
     private void markSuccess(StepContext context) {
