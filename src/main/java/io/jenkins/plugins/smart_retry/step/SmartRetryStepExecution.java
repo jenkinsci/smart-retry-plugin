@@ -153,7 +153,10 @@ public class SmartRetryStepExecution extends StepExecution {
                 if (decision.shouldRetry()) {
                     logRetryScheduling(context, settings.getProfile(), classification, decision);
                     attemptNumber = decision.getNextAttemptNumber();
-                    waitingUntilMillis = System.currentTimeMillis() + decision.getDelayMillis();
+                    // SpotBug Fix
+                    synchronized (SmartRetryStepExecution.this) {
+                        waitingUntilMillis = System.currentTimeMillis() + decision.getDelayMillis();
+                    }
                     scheduleRetry(System.currentTimeMillis());
                     return;
                 }
@@ -303,7 +306,21 @@ public class SmartRetryStepExecution extends StepExecution {
         if (action == null) {
             return;
         }
-        action.setProfile(resolvedSettings == null ? null : resolvedSettings.getProfile());
+
+        if (resolvedSettings != null) {
+            action.setProfile(resolvedSettings.getProfile());
+            action.setEffectiveMaxRetries(resolvedSettings.getMaxRetries());
+
+            if (resolvedSettings.getBackoff() != null) {
+                action.setEffectiveBackoff(resolvedSettings.getBackoff().name().toLowerCase(java.util.Locale.ROOT));
+            } else {
+                action.setEffectiveBackoff(null);
+            }
+
+            action.setEffectiveInitialDelaySeconds(resolvedSettings.getInitialDelaySeconds());
+        } else {
+            action.setProfile(null);
+        }
     }
 
     @CheckForNull

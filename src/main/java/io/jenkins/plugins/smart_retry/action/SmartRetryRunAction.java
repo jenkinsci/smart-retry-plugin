@@ -28,6 +28,9 @@ public final class SmartRetryRunAction implements Action, RunAction2, Serializab
     private transient Run<?, ?> run;
 
     private String profile;
+    private Integer effectiveMaxRetries;
+    private String effectiveBackoff;
+    private Integer effectiveInitialDelaySeconds;
     private final List<AttemptRecord> attempts = new ArrayList<>();
 
     @CheckForNull
@@ -104,10 +107,11 @@ public final class SmartRetryRunAction implements Action, RunAction2, Serializab
     }
 
     public String getFinalOutcomeDisplay() {
-        if (!isHasFinalOutcome()) {
+        String outcome = finalOutcome;
+        if (outcome == null || outcome.isBlank()) {
             return "In progress";
         }
-        return formatDisplayValue(finalOutcome);
+        return formatDisplayValue(outcome);
     }
 
     public Badge getFinalOutcomeBadge() {
@@ -251,6 +255,33 @@ public final class SmartRetryRunAction implements Action, RunAction2, Serializab
 
     public void setProfile(String profile) {
         this.profile = profile;
+    }
+
+    public Integer getEffectiveMaxRetries() {
+        return effectiveMaxRetries;
+    }
+
+    public void setEffectiveMaxRetries(Integer effectiveMaxRetries) {
+        this.effectiveMaxRetries = effectiveMaxRetries;
+        saveRun();
+    }
+
+    public String getEffectiveBackoff() {
+        return effectiveBackoff;
+    }
+
+    public void setEffectiveBackoff(String effectiveBackoff) {
+        this.effectiveBackoff = effectiveBackoff;
+        saveRun();
+    }
+
+    public Integer getEffectiveInitialDelaySeconds() {
+        return effectiveInitialDelaySeconds;
+    }
+
+    public void setEffectiveInitialDelaySeconds(Integer effectiveInitialDelaySeconds) {
+        this.effectiveInitialDelaySeconds = effectiveInitialDelaySeconds;
+        saveRun();
     }
 
     public void addAttempt(AttemptRecord attemptRecord) {

@@ -36,6 +36,24 @@
                                 <td>${it.profile}</td>
                             </tr>
                         </j:if>
+                        <j:if test="${it.effectiveMaxRetries != null}">
+                            <tr>
+                                <th>Effective Max Retries</th>
+                                <td>${it.effectiveMaxRetries}</td>
+                            </tr>
+                        </j:if>
+                        <j:if test="${it.effectiveBackoff != null}">
+                            <tr>
+                                <th>Effective Backoff Strategy</th>
+                                <td>${it.effectiveBackoff}</td>
+                            </tr>
+                        </j:if>
+                        <j:if test="${it.effectiveInitialDelaySeconds != null}">
+                            <tr>
+                                <th>Effective Initial Delay</th>
+                                <td>${it.effectiveInitialDelaySeconds} seconds</td>
+                            </tr>
+                        </j:if>
                         <tr>
                             <th>Final outcome</th>
                             <td>
