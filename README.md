@@ -1,3 +1,5 @@
+![Smart Retry banner](docs/assets/smart-retry-banner.svg)
+
 # Smart Retry
 
 > Retry only the failures worth retrying.
