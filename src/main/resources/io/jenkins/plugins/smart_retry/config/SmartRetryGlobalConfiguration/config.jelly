@@ -18,8 +18,8 @@
             </f:entry>
             <f:entry title="Initial delay seconds" field="initialDelaySeconds">
                 <f:number clazz="number" min="0" />
-            </f:entry>
-            <f:entry title="Disabled built-in rules" field="disabledBuiltInRules">
+            </f:entry> <f:entry title="Disabled built-in rules" field="disabledBuiltInRules" 
+                description="Supported IDs: ${descriptor.getSupportedDisabledBuiltInRulesList()}">
                 <f:expandableTextbox />
             </f:entry>
         </f:advanced>

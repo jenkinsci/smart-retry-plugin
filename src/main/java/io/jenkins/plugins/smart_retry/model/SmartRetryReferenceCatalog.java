@@ -27,6 +27,10 @@ public final class SmartRetryReferenceCatalog {
     private static final Set<String> SUPPORTED_DISABLED_BUILT_IN_RULE_IDS =
             DeterministicFailureClassifier.supportedDisabledBuiltInRuleIds();
 
+    public static Set<String> getSupportedDisabledBuiltInRuleIds() {
+        return Collections.unmodifiableSet(SUPPORTED_DISABLED_BUILT_IN_RULE_IDS);
+    }
+
     private static final List<FailureTypeDoc> FAILURE_TYPES = List.of(
             failureType(
                     FailureType.AGENT_LOST,
