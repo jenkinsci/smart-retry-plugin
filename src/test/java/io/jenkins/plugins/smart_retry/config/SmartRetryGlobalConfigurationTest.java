@@ -9,6 +9,7 @@ import hudson.model.Descriptor;
 import hudson.util.FormValidation;
 import hudson.util.ListBoxModel;
 import io.jenkins.plugins.smart_retry.model.FailureType;
+import io.jenkins.plugins.smart_retry.model.SmartRetryReferenceCatalog;
 import io.jenkins.plugins.smart_retry.policy.BackoffStrategy;
 import io.jenkins.plugins.smart_retry.policy.BuiltInProfiles;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.Set;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.htmlunit.html.HtmlButton;
+import org.htmlunit.html.HtmlElement;
 import org.htmlunit.html.HtmlForm;
 import org.htmlunit.html.HtmlPage;
 import org.junit.jupiter.api.Test;
@@ -412,5 +414,34 @@ class SmartRetryGlobalConfigurationTest {
         jenkins.submit(form);
 
         assertTrue(cfg.getCustomProfiles().isEmpty());
+    }
+
+    @Test
+    void supportedDisabledBuiltInRulesListMatchesReferenceCatalog(JenkinsRule jenkins) {
+        SmartRetryGlobalConfiguration cfg = SmartRetryGlobalConfiguration.get();
+
+        String expected = String.join(", ", SmartRetryReferenceCatalog.getSupportedDisabledBuiltInRuleIds());
+
+        assertEquals(expected, cfg.getSupportedDisabledBuiltInRulesList());
+    }
+
+    @Test
+    void globalConfigurationDisplaysSupportedDisabledBuiltInRuleIds(JenkinsRule jenkins) throws Exception {
+        SmartRetryGlobalConfiguration cfg = SmartRetryGlobalConfiguration.get();
+        String expectedDescription = "Supported IDs: " + cfg.getSupportedDisabledBuiltInRulesList();
+
+        JenkinsRule.WebClient webClient = jenkins.createWebClient();
+        HtmlPage page = webClient.goTo("manage/configure");
+
+        List<?> descriptions = page.getByXPath("//*[contains(concat(' ', normalize-space(@class), ' '), "
+                + "' jenkins-form-description ') "
+                + "and contains(normalize-space(.), 'Supported IDs:')]");
+
+        assertEquals(1, descriptions.size());
+
+        HtmlElement description = (HtmlElement) descriptions.get(0);
+        String actualDescription = description.getTextContent().trim().replaceAll("\\s+", " ");
+
+        assertEquals(expectedDescription, actualDescription);
     }
 }
