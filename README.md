@@ -2,7 +2,7 @@
 
 # Smart Retry
 
-> Retry only the failures worth retrying.
+> Safer retries for transient Jenkins failures.
 
 `smartRetry` helps Jenkins avoid blind retries by retrying high-confidence transient failures and failing fast on deterministic errors.
 
