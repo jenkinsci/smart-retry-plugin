@@ -1,0 +1,21 @@
+docs/mvp-prd.md
+  s_53a56a2b7b7a12::t_0aa960871d804d 30,37,85,88
+README.md
+  s_53a56a2b7b7a12::t_0aa960871d804d 218-219,225,227,239-246,253
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "1c89b7d26ba0d272ca355e7f0432978f0798542b",
+  "prompts": {},
+  "sessions": {
+    "s_53a56a2b7b7a12": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f3a5b-e34b-7df3-b039-90df929cb14e",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
