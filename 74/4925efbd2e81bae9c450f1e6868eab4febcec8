@@ -1,0 +1,19 @@
+README.md
+  s_53a56a2b7b7a12::t_11a1f90d0ebe44 240-253,258
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "744925efbd2e81bae9c450f1e6868eab4febcec8",
+  "prompts": {},
+  "sessions": {
+    "s_53a56a2b7b7a12": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f3a5b-e34b-7df3-b039-90df929cb14e",
+        "model": "gpt-5.4"
+      },
+      "human_author": "donhui <977675308@qq.com>"
+    }
+  }
+}
