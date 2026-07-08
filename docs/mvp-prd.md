@@ -34,7 +34,7 @@ These failures often succeed on a manual rebuild. Jenkins' built-in plain `retry
 - stable test assertion failures
 - non-idempotent deployment steps
 
-Jenkins also offers `retry` with `conditions`, which is useful for selected infrastructure cases such as agent loss and resumability-related failures. Smart Retry should complement that capability with profile-driven policy, broader high-confidence transient failure classification, and more explicit retry reasoning for build users.
+Jenkins also offers `retry` with `conditions`, and Declarative Pipeline exposes a related `retries N` form for supported `agent` block types. Those built-in capabilities are useful for selected infrastructure cases such as agent loss and resumability-related failures. Smart Retry should complement them with profile-driven policy, broader high-confidence transient failure classification, and more explicit retry reasoning for build users.
 
 ## 3. Goals
 

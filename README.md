@@ -215,14 +215,14 @@ Not exactly. The two steps solve different problems.
 
 Jenkins `retry {}` is unconditional: if the wrapped block fails, Jenkins reruns it without asking why it failed.
 
-Jenkins `retry(count: ..., conditions: [...])` is narrower than plain `retry {}` and already covers some important infrastructure cases, especially agent/pod loss and other resumability-related failures handled by Jenkins core and companion plugins.
+Jenkins `retry(count: ..., conditions: [...])` is narrower than plain `retry {}` and already covers some important infrastructure cases, especially agent/pod loss and other resumability-related failures handled by Jenkins core and companion plugins. Declarative Pipeline also exposes a related built-in form in supported `agent` block types via `retries N`, where Jenkins selects the underlying retry conditions automatically.
 
 Smart Retry is failure-aware: it first classifies the failure, then retries only when the active profile allows that failure category.
 
 In practice:
 
 - use `retry {}` when you already know a step is safe to rerun blindly
-- use `retry(count: ..., conditions: [...])` when Jenkins' built-in retry conditions already match the infrastructure failure mode you care about
+- use `retry(count: ..., conditions: [...])` or Declarative Pipeline `retries N` when Jenkins' built-in retry conditions already match the infrastructure failure mode you care about
 - use `smartRetry {}` when you want safer defaults and do not want compilation failures, test failures, or Pipeline logic errors retried automatically
 - use `smartRetry {}` when you also want profile-driven policy, richer transient failure categories such as SCM or artifact/network outages, centralized defaults, and build-user-visible retry reasoning
 
@@ -245,6 +245,8 @@ retry(count: 2, conditions: [agent()]) {
 ```
 
 This retries the agent-bound block only for Jenkins-recognized agent-related failure conditions.
+
+In Declarative Pipeline, supported `agent` block types can use `retries 2` for the same built-in, agent-oriented retry behavior, with Jenkins selecting the conditions automatically.
 
 ```groovy
 smartRetry(profile: 'infra', maxRetries: 2) {
