@@ -27,14 +27,14 @@ Teams running Jenkins on Kubernetes or other ephemeral agents frequently see bui
 - Maven, npm, PyPI, Docker registry, or Artifactory is temporarily unavailable
 - controller-to-agent channel drops unexpectedly
 
-These failures often succeed on a manual rebuild. Jenkins' built-in `retry {}` step helps, but it is too coarse because it retries everything, including:
+These failures often succeed on a manual rebuild. Jenkins' built-in plain `retry {}` step helps, but it is too coarse because it retries everything, including:
 
 - source code compilation failures
 - Pipeline script mistakes
 - stable test assertion failures
 - non-idempotent deployment steps
 
-Smart Retry should be a safer, failure-aware alternative focused on transient CI failures and avoiding blind retries.
+Jenkins also offers `retry` with `conditions`, and Declarative Pipeline exposes a related `retries N` form for supported `agent` block types. Those built-in capabilities are useful for selected infrastructure cases such as agent loss and resumability-related failures. Smart Retry should complement them with profile-driven policy, broader high-confidence transient failure classification, and more explicit retry reasoning for build users.
 
 ## 3. Goals
 
@@ -82,9 +82,10 @@ One-line positioning:
 
 > Retry only the failures worth retrying.
 
-What makes it different from built-in `retry {}`:
+What makes it different from built-in Jenkins retry steps:
 
 - failure-aware rather than unconditional
+- broader transient failure coverage than agent-focused built-in retry conditions alone
 - retries the right failures instead of every failure
 - safer defaults
 - profile-driven behavior
